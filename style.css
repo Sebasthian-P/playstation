@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    padding-bottom: 30px;
+    user-select: none;
+    min-width: 400px;
+}
+
+::selection {
+    background-color: #e2e2e2;
+}
+
+header {
+    background-color: #fafafa;
+    color:#000;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    z-index: 100;
+    text-transform: uppercase;
+    box-shadow: 0px 10px 8px -6px #0004;
+    letter-spacing: 5px;
+    font-size: 15px;
+}
+
+main {
+    margin-top: 110px;
+}
+
+main h3 {
+    margin: 0 25px;
+    text-align: center;
+}
+
+.juegos {
+    margin-top: 30px;
+}
+
+.portadas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.subtitulo {
+    height: 75px;
+    color: #fff;
+    background-color: #6d5547;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 10px 8px -6px #0004;
+    letter-spacing: 2px;
+    position: relative;
+    top: 0px;
+    z-index: 100;
+    outline: 2px dashed rgb(255, 255, 255);
+    outline-offset: -5px;
+    outline-width: 1px;
+} 
+
+.portadas .juego {
+    overflow: hidden;
+    outline: 3px solid #fff;
+    outline-offset: -7px;
+    transition: all .1s;
+}
+
+.portadas .juego:hover {
+    opacity: .8;
+    outline-offset: -10px;
+}
+
+.portadas .juego img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+article {
+    margin: 40px 0;
+}
+
+.link a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.link a:hover {
+    color: #c91f16;
+}
+
+
+.concepto {
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px;
+    color: rgb(58, 57, 63);
+    min-width: 100px;
+    line-height: 30px;
+}
+
+.link {
+    display: inline;
+    padding: 15px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    color: #000;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 4px #0004;
+    transition: all 300ms;
+    user-select: none;
+}
+
+.link:hover {
+    box-shadow: 0px 0px 8px 1px #c91f167c;
+}
+
+aside h3 {
+    border: 3px dotted rgb(61, 82, 87);
+    margin-top: 50px;
+    display: inline-block;
+    font-size: 35px;
+
+}
+
+.prueba {
+    display: block;
+    border: 5px solid red;
+    height: 500px;
+    width: 500px;
+    margin: 200px auto;
+    overflow: hidden;
+}
+
+.prueba img {
+    width: 200mm;
+    height: 200mm;
+    transition: width 0.5s, height 1s;
+}
+
+.prueba img:hover {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Selector de Tipo (<p> = p  -  <a> = a)*/
+/* p {
+    color:red;
+} */
+
+
+/* Selector Universal (*)*/
+/* * {
+    font-family: 'Lucida Sans';
+} */
+
+
+/* Selector de Clase (.)*/
+/* .juegos {
+    color: seagreen;
+} */
+
+
+/* Selector de Identificación (#)*/
+/* #redemption2 {
+    text-transform: uppercase;
+} */
+
+
+/* Selector de Atributos (type[attribute *= value] )*/
+/* img[src*="1"] {
+    width: 200px;
+    height: 280px;
+} */
+
+
+/* Selector de Pseudo-clase (hover)*/
+/* a:hover {
+    color: red;
+} */
+
+
+/* Selector de clases (<h4> = class="uppercase")*/
+/* .uppercase {
+    text-transform: uppercase;
+} */
+
+
+/* Selectores: Encadenamiento (chaining)( element.class {...} ) */
+/* p.colorparrafo {
+    color: red;
+} */
+
+
+/* Selectores: Combinador Descendiente (Descendant Combiner) ( .class element ) */
+/* .titlecolor h4 {
+color: seagreen;
+} */
+
+/* h4 {
+    color: red;
+} */
+
+
